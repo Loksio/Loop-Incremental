@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loop Incremental</title>
+    <style>
+        
+.loop-symbol {
+    position: fixed;
+    width: 2100px;
+    opacity: 0.51;
+    height: 1100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: spin 9s linear infinite;}
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);}
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);}}
+
+    body {
+        background-color: #00badb}
+        h1 {
+            position: relative; top: -30px;
+            text-align: center;
+            font-size: 75px;
+            font-family:'Courier New';
+            color: rgb(94, 7, 7);}
+        p {
+            position: relative; top: -25px;
+            text-align: center;
+            font-size: 29px;
+            font-family:'Courier' ;
+            font-weight: bold;
+            color: rgb(246, 247, 245)}
+
+        .version-number {
+            font-size: 21px;
+            color: rgb(219, 241, 18);
+            position: relative; top: 660px;
+            position: relative; right: 750px;}
+        button {
+            background-color: rgb(91, 171, 177);
+            font-size: 25px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+            color:white;
+            width: 220px;
+            height: 35px;}
+
+        button.loop-upgrade-1 {
+        background-color: rgb(255, 102, 0);
+        font-size: 25px;
+        border-radius: 8px;
+        display: block;
+        margin: 0;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 230px;
+        height: 60px;}
+        .upgrade-1 {
+            width: 1500px;
+            height: 60px;
+            opacity: 0.85;
+            border: 3px solid rgb(255, 100, 45);
+            position: relative;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding-left: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;}
+        .upgrade-1 h2 {
+               position: relative; left: -100px;
+            font-size: 25px;}
+        .loop-upgrade-1-level {
+            font-size: 30px;
+            transform: translate(-410px, 25px);
+            min-width: 100px;
+            white-space: nowrap;
+            color: rgb(0, 0, 0);}
+        .loop-upgrade-1-effect {
+            font-size: 27px;
+            transform: translate(-650px, 25px);
+            color: rgb(0, 0, 0);}
+
+         button.loop-upgrade-2 {
+            font-size: 25px;
+            background-color: rgb(255, 102, 0);
+            border-radius: 8px;
+            display: block;
+            margin: 0;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 230px;
+            height: 60px;}
+        .upgrade-2 {
+            width: 1500px;
+            height: 60px;
+            opacity: 0.85;
+            border: 3px solid rgb(255, 100, 45);
+            position: relative;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding-left: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;}
+        .upgrade-2 h3 {
+               position: relative; left: -100px;
+            font-size: 25px;}
+        .loop-upgrade-2-level {
+            font-size: 30px;
+            min-width: 100px;
+            white-space: nowrap;
+            transform: translate(-410px, 25px);
+            color: rgb(0, 0, 0);}
+        .loop-upgrade-2-effect {
+            font-size: 27px;
+            transform: translate(-650px, 25px);
+            color: rgb(0, 0, 0);}
+
+         button.loop-upgrade-3 {
+            font-size: 25px;
+            background-color: rgb(255, 102, 0);
+            border-radius: 8px;
+            display: block;
+            margin: 0;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 230px;
+            height: 60px;}
+        .upgrade-3 {
+            width: 1500px;
+            height: 60px;
+            opacity: 0.85;
+            border: 3px solid rgb(255, 100, 45);
+            position: relative;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding-left: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;}
+        .upgrade-3 h4 {
+               position: relative; left: -100px;
+            font-size: 16px;}
+        .loop-upgrade-3-level {
+            font-size: 30px;
+            min-width: 100px;
+            white-space: nowrap;
+            transform: translate(-380px, 25px);
+            color: rgb(0, 0, 0);}
+        .loop-upgrade-3-effect {
+            font-size: 27px;
+            transform: translate(-620px, 25px);
+            color: rgb(0, 0, 0);}
+
+       button.loop-upgrade-4 {
+            font-size: 25px;
+            background-color: rgb(255, 102, 0);
+            border-radius: 8px;
+            display: block;
+            margin: 0;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 230px;
+            height: 60px;}
+        .upgrade-4 {
+            width: 1500px;
+            height: 60px;
+            opacity: 0.85;
+            border: 3px solid rgb(255, 100, 45);
+            position: relative;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding-left: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;}
+        .upgrade-4 h5 {
+               position: relative; left: -100px;
+            font-size: 25px;}
+        .loop-upgrade-4-level {
+            font-size: 30px;
+            min-width: 100px;
+            white-space: nowrap;
+            transform: translate(-410px, 25px);
+            color: rgb(0, 0, 0);}
+        .loop-upgrade-4-effect {
+            font-size: 27px;
+            transform: translate(-650px, 25px);
+            color: rgb(0, 0, 0);}
+    </style>
+
+</head>
+<body>
+ <svg class="loop-symbol" viewBox="0 0 200 200">
+    <defs>
+        <marker
+            id="loop-arrow"
+            markerWidth="34"
+            markerHeight="34"
+            viewBox="0 0 28 28"
+            refX="5"
+            refY="14"
+            orient="auto"
+            markerUnits="userSpaceOnUse" >
+            <path
+                d="M 26 14 L 1 1 L 1 27 Z"
+                fill="white"
+                stroke="white"
+                stroke-width="1"
+                stroke-linejoin="round" />
+            <path
+                d="M 23 14 L 5 4 L 5 24 Z"
+                fill="black"
+                stroke="black"
+                stroke-width="1"
+                stroke-linejoin="round" />
+        </marker>
+    </defs>
+    <path
+        d="M 130 48 A 60 60 0 1 0 160 100"
+        fill="none"
+        stroke="white"
+        stroke-width="25"
+        stroke-linecap="round" />
+    <path
+        d="M 130 48 A 60 60 0 1 0 160 100"
+        fill="none"
+        stroke="black"
+        stroke-width="17"
+        stroke-linecap="round"
+        marker-end="url(#loop-arrow)" />
+
+</svg>
+    <h1>Loop Incremental</h1>
+    <p>Loops: 0  (Loops/ sec: 1)</p>
+    <p class="version-number">Loop Incremental v1.0.0-Alpha-1</p>
+    <button>Loop</button>
+    <div class="upgrade-1">
+        <h2>More Loops (+1 Loop per level)</h2>
+        <p class="loop-upgrade-1-level">Level: 0</p>
+        <p class="loop-upgrade-1-effect">Effect: +x Loops</p>
+        <button class="loop-upgrade-1"></button>
+    </div>
+
+    <div class="upgrade-2">
+        <h3>Loop Multi (2x Loop per level)</h3>
+        <p class="loop-upgrade-2-level"></p>
+        <p class="loop-upgrade-2-effect"></p>
+        <button class="loop-upgrade-2"></button>
+    </div>
+
+    <div class="upgrade-3">
+        <h4>Scale Reducer (Reduces scalling of More Loops and <br> Loop Multi by 0.01 per level)</h4>
+        <p class="loop-upgrade-3-level"></p>
+        <p class="loop-upgrade-3-effect"></p>
+        <button class="loop-upgrade-3"></button>
+    </div>
+
+   <div class="upgrade-4">
+        <h5>Exponential Loops (Boosts Loop <br> Exponent by 0.01 per level)</h5>
+        <p class="loop-upgrade-4-level"></p>
+        <p class="loop-upgrade-4-effect"></p>
+        <button class="loop-upgrade-4"></button>
+    </div>
+    <script src="game.js"> </script>
+</body>
+</html>
