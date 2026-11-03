@@ -24,6 +24,7 @@ function formatShortNumber (number) {
     if (number < 100) return number.toFixed(1);
     return number.toFixed(0);}
 function formatNumber (number) {
+    if (number >= 1e12) return formatShortNumber(number / 1e12) + "t";
     if (number >= 1e9) return formatShortNumber(number / 1e9) + "b";
     if (number >= 1e6) return formatShortNumber(number / 1e6) + "m";
     if (number >= 1e3) return formatShortNumber(number / 1e3) + "k";
